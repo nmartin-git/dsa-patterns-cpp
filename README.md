@@ -18,12 +18,11 @@ I approach my algorithmic training with a structured strict 90-minute block dail
 4. **Commit (10m):** Documenting the optimal solution.
 
 ## 📂 Structure by Patterns
-- `/01-Arrays-and-Hashing`
-- `/02-Two-Pointers`
-- `/03-Sliding-Window`
-- `/04-Trees` 
-  - `235-Lowest-CommonAncestor.cpp` (O(N) Time, O(1) Space - Iterative approach)
-...
+- [📁 01-Arrays-and-Hashing](./01-Arrays-and-Hashing)
+- [📁 02-Two-Pointers](./02-Two-Pointers)
+- [📁 03-Sliding-Window](./03-Sliding-Window)
+- [📁 04-Trees](./04-Trees)
+  - [`235-Lowest-CommonAncestor.cpp`](./04-Trees/235-Lowest-CommonAncestor.cpp) *(O(N) Time, O(1) Space - Iterative approach)*
 
 ## 🛠️ Stack & Principles
 * **Language:** Modern C++
