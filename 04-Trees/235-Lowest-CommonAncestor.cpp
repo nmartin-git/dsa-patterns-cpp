@@ -19,11 +19,13 @@
 class Solution {
 public:
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
-	while (root)
+	int maxVal = std::max(p->val, q->val);
+    int minVal = std::min(p->val, q->val);
+    while (root)
 	{
-		if (root->val > std::max(p->val, q->val))
+		if (root->val > maxVal)
 			root = root->left;
-		else if (root->val < std::min(p->val, q->val))
+		else if (root->val < minVal)
 			root = root->right;
 		else
 	 		return root;
