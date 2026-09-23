@@ -23,6 +23,7 @@ I approach my algorithmic training with a structured strict 90-minute block dail
 - [📁 03-Sliding-Window](./03-Sliding-Window)
 - [📁 04-Trees](./04-Trees)
   - [`235-Lowest-CommonAncestor.cpp`](./04-Trees/235-Lowest-CommonAncestor.cpp) *(O(N) Time, O(1) Space - Iterative approach)*
+- [📁 05-Graphs](./05-Graphs)
 
 ## 🛠️ Stack & Principles
 * **Language:** Modern C++
