@@ -3,7 +3,7 @@
 
 class Solution {
 public:
-    vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {
+    std::vector<int> findOrder(int numCourses, std::vector<std::vector<int>>& prerequisites) {
         std::queue<int> q;
         std::vector<int> resTab;
         std::vector<int> preCount(numCourses, 0);
@@ -19,15 +19,14 @@ public:
             if (preCount[i] == 0)
                 q.push(i);
         }
-        while (!q.empty())
-        {
-             tmp = q.front();
-             q.pop();
-             resTab.push_back(tmp);
-             for (int course: adj[tmp]) {
+        while (!q.empty()) {
+            tmp = q.front();
+            q.pop();
+            resTab.push_back(tmp);
+            for (int course: adj[tmp]) {
                     if (--preCount[course] == 0)
                         q.push(course);
-             }
+            }
         }
         if (resTab.size() != numCourses)
             return {};
