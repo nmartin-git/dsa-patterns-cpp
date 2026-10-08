@@ -22,7 +22,7 @@
 
 class Solution {
 public:
-    std::vector<std::vector<int>>   levelOrder(TreeNode* root) {
+    std::vector<std::vector<int>> levelOrder(TreeNode* root) {
         std::vector<std::vector<int>> resTab;
         std::vector<int> tmp;
         std::queue<TreeNode *> q;

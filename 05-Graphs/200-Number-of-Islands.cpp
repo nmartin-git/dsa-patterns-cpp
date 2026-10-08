@@ -10,14 +10,14 @@
 class Solution {
 public:
     void dfs(std::vector<std::vector<char>>& grid, int r, int c) {
-         if (r < 0 || c < 0 || r >= grid.size() || c >= grid[0].size() || grid[r][c] == '0')
-             return ;
-         grid[r][c] = '0';
-         dfs(grid, r, c + 1);
-         dfs(grid, r + 1, c);
-         dfs(grid, r, c - 1);
-         dfs(grid, r - 1, c);
-         return ;
+        if (r < 0 || c < 0 || r >= grid.size() || c >= grid[0].size() || grid[r][c] == '0')
+            return;
+        grid[r][c] = '0';
+        dfs(grid, r, c + 1);
+        dfs(grid, r + 1, c);
+        dfs(grid, r, c - 1);
+        dfs(grid, r - 1, c);
+        return;
     }
 
     int numIslands(std::vector<std::vector<char>>& grid) {
@@ -25,16 +25,14 @@ public:
         int ySize = grid.size();
         int islandsCount = 0;
 
-        for (int y = 0; y < ySize; ++y)
-        {
-             iSize = grid[y].size();
-             for (int i = 0; i < iSize; ++i)
-             {
-                  if (grid[y][i] == '1') {
-                      dfs(grid, y, i);
-                      ++islandsCount;
-                  }
-              }
+        for (int y = 0; y < ySize; ++y) {
+            iSize = grid[y].size();
+            for (int i = 0; i < iSize; ++i) {
+                if (grid[y][i] == '1') {
+                    dfs(grid, y, i);
+                    ++islandsCount;
+                }
+            }
         }
         return islandsCount;
     }

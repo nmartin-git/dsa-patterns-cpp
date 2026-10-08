@@ -1,3 +1,10 @@
+/*
+ * Problem 210: Course Schedule II
+ * Time Complexity: O(V + E) - Where V is numCourses (Vertices) and E is the number of prerequisites (Edges). We visit each course and its edges at most once.
+ * Space Complexity: O(V + E) - Space required to build the adjacency list, the in-degree array, and the queue.
+ * Note: Modeled as a Directed Graph. Uses Kahn's Algorithm (BFS) with in-degree counting for Topological Sort and cycle detection.
+ */
+
 #include <vector>
 #include <queue>
 

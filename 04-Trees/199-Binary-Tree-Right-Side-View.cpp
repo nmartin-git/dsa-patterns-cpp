@@ -29,10 +29,8 @@ public:
         if (!root)
             return resTab;
         q.push(root);
-        while (!q.empty())
-        {
-             for (int i = q.size(); i > 0; --i)
-             {
+        while (!q.empty()) {
+            for (int i = q.size(); i > 0; --i) {
                 if (i == 1)
                     resTab.push_back(q.front()->val);
                 if (q.front()->left)

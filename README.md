@@ -24,7 +24,7 @@ I approach my algorithmic training with a structured strict 90-minute block dail
 - [📁 04-Trees](./04-Trees)
   - [`235-Lowest-CommonAncestor.cpp`](./04-Trees/235-Lowest-CommonAncestor.cpp) *(O(N) Time, O(1) Space - Iterative approach)*
 - [📁 05-Graphs](./05-Graphs)
-- [📁 06-1D-DP](./06-1d-dp)
+- [📁 06-1D-DP](./06-1D-DP)
 - [📁 07-Stack](./07-Stack)
 
 ## 🛠️ Stack & Principles

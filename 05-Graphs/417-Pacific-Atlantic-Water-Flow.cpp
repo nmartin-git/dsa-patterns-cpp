@@ -11,7 +11,7 @@ class Solution {
 public:
     void dfs(std::vector<std::vector<int>>& heights, std::vector<std::vector<bool>>& reachable, int r, int c) {
         if (reachable[r][c])
-            return ;
+            return;
         reachable[r][c] = true;
         if (c + 1 < heights[0].size() && heights[r][c] <= heights[r][c + 1])
             dfs(heights, reachable, r, c + 1);
